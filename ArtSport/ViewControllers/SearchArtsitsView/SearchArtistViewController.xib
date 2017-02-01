@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="FontAwesome.otf">
+            <string>FontAwesome</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SearchArtistViewController">
+            <connections>
+                <outlet property="searchField" destination="32H-4R-EIP" id="bi7-rG-Afp"/>
+                <outlet property="searchResultTableView" destination="FMh-Ci-LdV" id="9DZ-7C-oUn"/>
+                <outlet property="view" destination="zBC-4N-aY9" id="ZNx-X1-2bD"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="zBC-4N-aY9">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kfa-QU-2CF">
+                    <rect key="frame" x="16" y="35" width="291" height="42"/>
+                    <subviews>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="bottom" text="Daniel flowers" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="32H-4R-EIP">
+                            <rect key="frame" x="20" y="0.0" width="240" height="37"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits" autocorrectionType="no" returnKeyType="search"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="XT1-TF-Fwr"/>
+                            </connections>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tKX-gT-geQ">
+                            <rect key="frame" x="0.0" y="18" width="20" height="21"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="20" id="coc-kV-nj3"/>
+                                <constraint firstAttribute="height" constant="21" id="fbf-gs-XaG"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rex-TK-2aP">
+                            <rect key="frame" x="265" y="0.0" width="26" height="39"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="26" id="09k-Hr-5a8"/>
+                                <constraint firstAttribute="height" constant="39" id="USf-4s-sLH"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="FontAwesome" family="FontAwesome" pointSize="16"/>
+                            <inset key="titleEdgeInsets" minX="6" minY="0.0" maxX="0.0" maxY="-4"/>
+                            <state key="normal" title="">
+                                <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="clearSearchField:" destination="-1" eventType="touchUpInside" id="kuC-es-PYX"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHU-AF-RtS">
+                            <rect key="frame" x="0.0" y="41" width="291" height="1"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="1BH-fl-CeV"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Rex-TK-2aP" secondAttribute="trailing" id="8Ra-fw-53m"/>
+                        <constraint firstItem="dHU-AF-RtS" firstAttribute="top" secondItem="32H-4R-EIP" secondAttribute="bottom" constant="4" id="D2P-j2-zad"/>
+                        <constraint firstItem="dHU-AF-RtS" firstAttribute="leading" secondItem="Kfa-QU-2CF" secondAttribute="leading" id="EPR-ky-NlK"/>
+                        <constraint firstAttribute="height" constant="42" id="GKY-dd-Slo"/>
+                        <constraint firstItem="tKX-gT-geQ" firstAttribute="leading" secondItem="Kfa-QU-2CF" secondAttribute="leading" id="Hgw-3n-eft"/>
+                        <constraint firstItem="32H-4R-EIP" firstAttribute="leading" secondItem="tKX-gT-geQ" secondAttribute="trailing" id="N6J-Jw-aQL"/>
+                        <constraint firstItem="dHU-AF-RtS" firstAttribute="top" secondItem="tKX-gT-geQ" secondAttribute="bottom" constant="2" id="egY-FS-RJj"/>
+                        <constraint firstAttribute="trailing" secondItem="dHU-AF-RtS" secondAttribute="trailing" id="ms4-vP-zII"/>
+                        <constraint firstAttribute="bottom" secondItem="dHU-AF-RtS" secondAttribute="bottom" id="ndX-5B-suY"/>
+                        <constraint firstItem="Rex-TK-2aP" firstAttribute="leading" secondItem="32H-4R-EIP" secondAttribute="trailing" constant="5" id="rTu-u8-Gof"/>
+                        <constraint firstItem="dHU-AF-RtS" firstAttribute="top" secondItem="Rex-TK-2aP" secondAttribute="bottom" constant="2" id="sE4-Kc-Lll"/>
+                        <constraint firstItem="32H-4R-EIP" firstAttribute="top" secondItem="Kfa-QU-2CF" secondAttribute="top" id="x1E-7j-gPj"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Gy-bF-gKd">
+                    <rect key="frame" x="313" y="47" width="46" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Dec-8r-W9N"/>
+                        <constraint firstAttribute="width" constant="46" id="f1K-QT-ElY"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="11"/>
+                    <inset key="titleEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="-2"/>
+                    <state key="normal" title="CLOSE">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="closeScreen:" destination="-1" eventType="touchUpInside" id="yrN-Cb-hK8"/>
+                    </connections>
+                </button>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="FMh-Ci-LdV">
+                    <rect key="frame" x="16" y="85" width="291" height="582"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="YlQ-sZ-0Ei"/>
+                        <outlet property="delegate" destination="-1" id="fSR-rj-usX"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="Kfa-QU-2CF" firstAttribute="leading" secondItem="zBC-4N-aY9" secondAttribute="leading" constant="16" id="5jV-Q8-HSk"/>
+                <constraint firstItem="Kfa-QU-2CF" firstAttribute="top" secondItem="zBC-4N-aY9" secondAttribute="top" constant="35" id="Qda-Co-2SK"/>
+                <constraint firstItem="4Gy-bF-gKd" firstAttribute="top" secondItem="zBC-4N-aY9" secondAttribute="top" constant="47" id="STX-Dw-m23"/>
+                <constraint firstAttribute="trailing" secondItem="FMh-Ci-LdV" secondAttribute="trailing" constant="68" id="V2y-dL-w23"/>
+                <constraint firstItem="FMh-Ci-LdV" firstAttribute="leading" secondItem="zBC-4N-aY9" secondAttribute="leading" constant="16" id="WBr-ti-8mK"/>
+                <constraint firstItem="FMh-Ci-LdV" firstAttribute="top" secondItem="Kfa-QU-2CF" secondAttribute="bottom" constant="8" id="cgg-wL-n5K"/>
+                <constraint firstAttribute="bottom" secondItem="FMh-Ci-LdV" secondAttribute="bottom" id="dhZ-XZ-S2T"/>
+                <constraint firstItem="4Gy-bF-gKd" firstAttribute="leading" secondItem="Kfa-QU-2CF" secondAttribute="trailing" constant="6" id="mCD-Uo-pML"/>
+                <constraint firstAttribute="trailing" secondItem="4Gy-bF-gKd" secondAttribute="trailing" constant="16" id="xyF-Sr-2r6"/>
+            </constraints>
+            <point key="canvasLocation" x="33.5" y="53.5"/>
+        </view>
+    </objects>
+</document>

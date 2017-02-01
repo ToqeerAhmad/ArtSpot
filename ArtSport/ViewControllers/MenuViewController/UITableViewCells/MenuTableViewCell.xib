@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="NO">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <development version="7000" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="MenuTableViewCell" rowHeight="53" id="KGk-i7-Jjw" customClass="MenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="52"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2fb-LY-9D1">
+                        <rect key="frame" x="0.0" y="51" width="375" height="1"/>
+                        <color key="backgroundColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="d6U-3b-0zU"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porforio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2dB-wb-ZrQ" customClass="UILabelFontClass">
+                        <rect key="frame" x="0.0" y="5" width="375" height="24"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="View and edit profile" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PG6-6T-sQp" customClass="UILabelFontClass">
+                        <rect key="frame" x="0.0" y="34" width="173" height="15"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="173" id="8T2-Pa-P61"/>
+                            <constraint firstAttribute="height" constant="15" id="ikj-Ck-Jmw"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Porforio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Qk-Yo-x5O" customClass="UILabelFontClass">
+                        <rect key="frame" x="0.0" y="23" width="375" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="ERC-VL-xeH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        <color key="textColor" red="0.72336632013320923" green="0.72336632013320923" blue="0.72336632013320923" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="2fb-LY-9D1" secondAttribute="bottom" id="3fU-v5-FcG"/>
+                    <constraint firstItem="PG6-6T-sQp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="5Cs-vB-527"/>
+                    <constraint firstItem="8Qk-Yo-x5O" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8Bs-EI-w9D"/>
+                    <constraint firstItem="PG6-6T-sQp" firstAttribute="top" secondItem="2dB-wb-ZrQ" secondAttribute="bottom" constant="5" id="Gxt-DK-avz"/>
+                    <constraint firstAttribute="trailing" secondItem="2fb-LY-9D1" secondAttribute="trailing" id="Hjb-55-x7B"/>
+                    <constraint firstAttribute="trailing" secondItem="8Qk-Yo-x5O" secondAttribute="trailing" id="SAF-v6-zE1"/>
+                    <constraint firstItem="2dB-wb-ZrQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="XXy-Dj-6fC"/>
+                    <constraint firstItem="2dB-wb-ZrQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="d88-Ot-ktc"/>
+                    <constraint firstItem="2fb-LY-9D1" firstAttribute="top" secondItem="8Qk-Yo-x5O" secondAttribute="bottom" constant="5" id="klO-eD-XfZ"/>
+                    <constraint firstAttribute="trailing" secondItem="2dB-wb-ZrQ" secondAttribute="trailing" id="lCC-4O-xch"/>
+                    <constraint firstItem="2fb-LY-9D1" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="zJ2-Ak-u2W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="detailLabel" destination="PG6-6T-sQp" id="4LQ-GQ-W8c"/>
+                <outlet property="lblTitle" destination="2dB-wb-ZrQ" id="3ac-lF-rKZ"/>
+                <outlet property="lblTitle1" destination="8Qk-Yo-x5O" id="KAv-rI-Uz8"/>
+            </connections>
+            <point key="canvasLocation" x="61.5" y="61.5"/>
+        </tableViewCell>
+    </objects>
+</document>

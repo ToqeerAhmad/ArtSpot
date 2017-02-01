@@ -1,0 +1,64 @@
+//
+//  PrefixHeader.pch
+//  ArtSport
+//
+//  Created by Toqir Ahmad on 31/12/2016.
+//  Copyright © 2016 Toqir Ahmad. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+#define TARGET_IPHONE_SIMULATOR     TARGET_OS_SIMULATOR /* deprecated */
+
+#define SCREEN_WIDTH ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.width : [[UIScreen mainScreen] bounds].size.height)
+
+#define SCREEN_HEIGHT ((([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortrait) || ([UIApplication sharedApplication].statusBarOrientation == UIInterfaceOrientationPortraitUpsideDown)) ? [[UIScreen mainScreen] bounds].size.height : [[UIScreen mainScreen] bounds].size.width)
+
+#define SCREEN_MAX_LENGTH (MAX(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define SCREEN_MIN_LENGTH (MIN(SCREEN_WIDTH, SCREEN_HEIGHT))
+#define IS_IPHONE_4_OR_LESS (SCREEN_MAX_LENGTH < 568.0)
+#define IS_IPHONE_5 (SCREEN_MAX_LENGTH == 568.0)
+#define IS_IPHONE_6 (SCREEN_MAX_LENGTH == 667.0)
+#define IS_IPHONE_6P (SCREEN_MAX_LENGTH == 736.0)
+
+
+#define ASArtistImageURl "http://artspotonline.com/assets/artists/"
+#define ASArtWorkImageURl "http://artspotonline.com/assets/arts/"
+#define ASABooksImageURl "http://artspotonline.com/assets/books/"
+
+#import "JTSImageViewController.h"
+#import "JTSImageInfo.h"
+#import "CustomPresenterViewController.h"
+#import "RelatedWorkTableViewCell.h"
+#import "ArtistBioTableViewCell.h"
+#import "ArtistAboutTableViewCell.h"
+#import "ArtistViewController.h"
+#import "ArtworkTableViewCell.h"
+#import "Books&CatalogsViewController.h"
+#import "MenuTableViewCell.h"
+#import "ProfileViewController.h"
+#import "MyLibraryViewController.h"
+#import "CollectionViewCell.h"
+#import "ArtWorkViewController.h"
+#import "SearchTableViewCell.h"
+#import "SearchArtistTableViewCell.h"
+#import "SearchArtistViewController.h"
+#import "HorizontolCollectionViewCell.h"
+#import "ApplicationHelper.h"
+#import "UIView+Toast.h"
+#import "WebServices.h"
+#import "JsonParser.h"
+#import "MBProgressHUD.h"
+#import "ModelLocator.h"
+#import "SearchArtistModel.h"
+#import "UIImageView+UIActivityIndicatorForSDWebImage.h"
+#import "ChangePasswordViewController.h"
+#import "LoginViewController.h"
+#import "ArtworkModel.h"
+#import "ArtistCollectionViewCell.h"
+#import "BookModel.h"
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif /* PrefixHeader_pch */
