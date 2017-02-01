@@ -32,22 +32,22 @@
   
 }
 
--(void)viewDidAppear:(BOOL)animated {
-    [super viewDidAppear:animated];
-    [UIView animateWithDuration:3
-                     animations:^{
-                         
-                         ;
-                         self.bottomConstraintofBubble.constant += 73;
-                         [self.centreBtn layoutIfNeeded];
-                         
-                     }
-                     completion:^(BOOL finished)
-     {
-         
-     }];
-    
-}
+//-(void)viewDidAppear:(BOOL)animated {
+//    [super viewDidAppear:animated];
+//    [UIView animateWithDuration:3
+//                     animations:^{
+//                         
+//                         ;
+//                         self.bottomConstraintofBubble.constant += 73;
+//                         [self.centreBtn layoutIfNeeded];
+//                         
+//                     }
+//                     completion:^(BOOL finished)
+//     {
+//         
+//     }];
+//    
+//}
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -97,10 +97,29 @@
 //    videoPreviewLayer.frame = self.previewView.bounds;
 //}
 
-- (void)viewDidDisappear:(BOOL)animated {
+ - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
+    self.bottomConstraintofBubble.constant -= 73;
     self.navigationController.tabBarItem.image = [UIImage imageNamed:@"icon_balloon"];
+    
+}
 
+-(void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    [self.centreBtn layoutIfNeeded];
+    [UIView animateWithDuration:1
+                     animations:^{
+                         
+                         ;
+                         self.bottomConstraintofBubble.constant += 73;
+                         [self.view layoutIfNeeded];
+                         
+                     }
+                     completion:^(BOOL finished)
+     {
+         
+     }];
+    
 }
 
 //- (IBAction)capturePhoto:(id)sender {
