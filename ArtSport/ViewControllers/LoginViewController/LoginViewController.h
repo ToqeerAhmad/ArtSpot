@@ -7,8 +7,10 @@
 //
 
 #import "ViewController.h"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <FBSDKLoginButtonDelegate>
 
 
 // SignUp Views Outlets

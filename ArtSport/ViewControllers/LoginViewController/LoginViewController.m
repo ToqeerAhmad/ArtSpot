@@ -208,6 +208,56 @@
 }
 
 
+-(IBAction)facebookLoginButtonTapped:(id)sender
+{
+    
+    FBSDKLoginManager *login = [[FBSDKLoginManager alloc] init];
+   // [login logOut];
+    [login
+     logInWithReadPermissions: @[@"public_profile", @"email"]
+     fromViewController:self
+     handler:^(FBSDKLoginManagerLoginResult *result, NSError *error) {
+         if (error) {
+             NSLog(@"Process error");
+         } else if (result.isCancelled) {
+             NSLog(@"Cancelled");
+         } else {
+             NSLog(@"Logged in");
+             [[[FBSDKGraphRequest alloc] initWithGraphPath:@"me" parameters:@{@"fields": @"id, name, email,picture.width(300).height(300)"}]
+              startWithCompletionHandler:^(FBSDKGraphRequestConnection *connection, id result, NSError *error) {
+                  if (!error) {
+                      NSLog(@"fetched user:%@", result);
+                      NSString *nameString = [result valueForKey:@"name"];
+                      NSString *fname;
+                      NSString *lname;
+                      NSString *email = [result valueForKey:@"email"];
+//                      NSString *fbId = [result valueForKey:@"id"];
+//                      imageStringFromFB = [[[result valueForKey:@"picture"] valueForKey:@"data"] valueForKey:@"url"];
+//                      isFromfb = YES;
+                      NSArray *nameArray = [nameString componentsSeparatedByString:@" "];
+                      if (nameArray.count > 1) {
+                          fname = [nameArray objectAtIndex:0];
+                          lname = [nameArray objectAtIndex:1];
+                      }else
+                          fname = nameString;
+                      
+                      
+                      NSMutableDictionary *parameters = [[NSMutableDictionary alloc] init];
+                      [parameters setObject:fname forKey:@"usr_fname"];
+                      [parameters setObject:lname forKey:@"usr_lname"];
+                      [parameters setObject:email forKey:@"usr_email"];
+                      
+                      WebServices *service = [[WebServices alloc] init];
+                      service.delegate = self;
+                      [service SendRequestForPostData:parameters andServiceURL:@"/user/signinfb" andServiceReturnType:@"signinfb"];
+                  }
+              }];
+         }
+     }];
+
+}
+
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.

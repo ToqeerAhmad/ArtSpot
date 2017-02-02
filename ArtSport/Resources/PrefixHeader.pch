@@ -25,6 +25,8 @@
 #define ASArtistImageURl "http://artspotonline.com/assets/artists/"
 #define ASArtWorkImageURl "http://artspotonline.com/assets/arts/"
 #define ASABooksImageURl "http://artspotonline.com/assets/books/"
+#import <FBSDKCoreKit/FBSDKCoreKit.h>
+#import <FBSDKLoginKit/FBSDKLoginKit.h>
 
 #import "JTSImageViewController.h"
 #import "JTSImageInfo.h"

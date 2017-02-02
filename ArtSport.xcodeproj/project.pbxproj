@@ -27,6 +27,10 @@
 		4657FE6E1E2FDBC300C4C971 /* ArtworkModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4657FE6D1E2FDBC300C4C971 /* ArtworkModel.m */; };
 		4657FE711E2FF16A00C4C971 /* ArtistCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4657FE701E2FF16A00C4C971 /* ArtistCollectionViewCell.m */; };
 		4657FE7D1E314E1600C4C971 /* BookModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4657FE7C1E314E1600C4C971 /* BookModel.m */; };
+		4667142A1E43C68C0047337B /* FBSDKCoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466714281E43C68C0047337B /* FBSDKCoreKit.framework */; };
+		4667142B1E43C68C0047337B /* FBSDKLoginKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 466714291E43C68C0047337B /* FBSDKLoginKit.framework */; };
+		4667142D1E43CA420047337B /* AssetsLibrary.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4667142C1E43CA420047337B /* AssetsLibrary.framework */; };
+		4667142F1E43CA490047337B /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4667142E1E43CA490047337B /* Social.framework */; };
 		468503E41E16A7FC00B054D3 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 468503E31E16A7FC00B054D3 /* SearchViewController.m */; };
 		468D484B1E15782C004E75B2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 468D484A1E15782C004E75B2 /* main.m */; };
 		468D484E1E15782C004E75B2 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 468D484D1E15782C004E75B2 /* AppDelegate.m */; };
@@ -154,6 +158,10 @@
 		4657FE7B1E314E1600C4C971 /* BookModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookModel.h; sourceTree = "<group>"; };
 		4657FE7C1E314E1600C4C971 /* BookModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookModel.m; sourceTree = "<group>"; };
 		46646D30FEB09BC4BD423E6E /* Pods-ArtSport.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ArtSport.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ArtSport/Pods-ArtSport.debug.xcconfig"; sourceTree = "<group>"; };
+		466714281E43C68C0047337B /* FBSDKCoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKCoreKit.framework; sourceTree = "<group>"; };
+		466714291E43C68C0047337B /* FBSDKLoginKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FBSDKLoginKit.framework; sourceTree = "<group>"; };
+		4667142C1E43CA420047337B /* AssetsLibrary.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AssetsLibrary.framework; path = System/Library/Frameworks/AssetsLibrary.framework; sourceTree = SDKROOT; };
+		4667142E1E43CA490047337B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		468503E21E16A7FC00B054D3 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		468503E31E16A7FC00B054D3 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
 		468D48461E15782C004E75B2 /* ArtSport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtSport.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -295,7 +303,11 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4667142F1E43CA490047337B /* Social.framework in Frameworks */,
+				4667142D1E43CA420047337B /* AssetsLibrary.framework in Frameworks */,
 				4A13A5EF52DFF2ADB0F7A100 /* libPods-ArtSport.a in Frameworks */,
+				4667142A1E43C68C0047337B /* FBSDKCoreKit.framework in Frameworks */,
+				4667142B1E43C68C0047337B /* FBSDKLoginKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,6 +411,15 @@
 			path = "Books&CatalogsViewController";
 			sourceTree = "<group>";
 		};
+		466714271E43C68C0047337B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				466714281E43C68C0047337B /* FBSDKCoreKit.framework */,
+				466714291E43C68C0047337B /* FBSDKLoginKit.framework */,
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
 		468503E11E16A7ED00B054D3 /* SearchViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -434,6 +455,7 @@
 		468D48481E15782C004E75B2 /* ArtSport */ = {
 			isa = PBXGroup;
 			children = (
+				466714271E43C68C0047337B /* Frameworks */,
 				461E47461E3CB3BA005054A7 /* out1.mp4 */,
 				46C38FCA1E17F9BE006A5E95 /* Resources */,
 				468D48A41E15BCF7004E75B2 /* Fonts */,
@@ -811,6 +833,8 @@
 		64F0A1610DAC8F24B7D83294 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4667142E1E43CA490047337B /* Social.framework */,
+				4667142C1E43CA420047337B /* AssetsLibrary.framework */,
 				79B431924B9D7ABDDF88B353 /* libPods-ArtSport.a */,
 				861AB91C0836543F893C0C93 /* libPods-ArtSportTests.a */,
 				C54BC347ED85C110A25F2324 /* libPods-ArtSportUITests.a */,
@@ -1319,6 +1343,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = EWE93C7WLT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ArtSport/Frameworks",
+				);
 				GCC_PREFIX_HEADER = ArtSport/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = ArtSport/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
@@ -1337,6 +1365,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				DEVELOPMENT_TEAM = EWE93C7WLT;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/ArtSport/Frameworks",
+				);
 				GCC_PREFIX_HEADER = ArtSport/Resources/PrefixHeader.pch;
 				INFOPLIST_FILE = ArtSport/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;

@@ -51,6 +51,9 @@
                                 <state key="normal" title="CONTINUE WITH FACEBOOK">
                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="facebookLoginButtonTapped:" destination="Rbl-nx-FbO" eventType="touchUpInside" id="EZ3-oi-Va9"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HDc-Ot-MkU">
                                 <rect key="frame" x="250" y="634" width="47" height="21"/>
@@ -700,7 +703,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-20" vertical="0.0"/>
                     </tabBarItem>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Q02-fa-GfQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q02-fa-GfQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1912,7 +1915,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="14"/>
                     </tabBarItem>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Efn-Zi-xHz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Efn-Zi-xHz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
