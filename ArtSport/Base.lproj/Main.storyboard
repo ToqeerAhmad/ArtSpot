@@ -914,7 +914,10 @@
                                                     </constraints>
                                                 </imageView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3cb-EL-0tq" userLabel="ImageView Button">
-                                                    <rect key="frame" x="57" y="227" width="261" height="30"/>
+                                                    <rect key="frame" x="57" y="76" width="261" height="181"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" secondItem="3cb-EL-0tq" secondAttribute="height" multiplier="261:181" id="htA-eX-IcN"/>
+                                                    </constraints>
                                                 </button>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Museum of Modern Art" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yDh-8t-02g">
                                                     <rect key="frame" x="16" y="342" width="343" height="17"/>
@@ -1564,7 +1567,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZKh-Nu-3Ya" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1ro-kH-CTv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1ro-kH-CTv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1935,7 +1938,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="30" vertical="19"/>
                     </tabBarItem>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="o4f-TF-7re">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o4f-TF-7re">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
