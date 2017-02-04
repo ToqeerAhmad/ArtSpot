@@ -164,17 +164,17 @@
 		4667142E1E43CA490047337B /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 		468503E21E16A7FC00B054D3 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
 		468503E31E16A7FC00B054D3 /* SearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchViewController.m; sourceTree = "<group>"; };
-		468D48461E15782C004E75B2 /* ArtSport.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtSport.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		468D48461E15782C004E75B2 /* ArtSpot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ArtSpot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		468D484A1E15782C004E75B2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		468D484C1E15782C004E75B2 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		468D484D1E15782C004E75B2 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		468D48531E15782C004E75B2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		468D48551E15782C004E75B2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		468D485A1E15782C004E75B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		468D485F1E15782C004E75B2 /* ArtSportTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtSportTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		468D485F1E15782C004E75B2 /* ArtSpotTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtSpotTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		468D48631E15782C004E75B2 /* ArtSportTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtSportTests.m; sourceTree = "<group>"; };
 		468D48651E15782C004E75B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		468D486A1E15782C004E75B2 /* ArtSportUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtSportUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		468D486A1E15782C004E75B2 /* ArtSpotUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ArtSpotUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		468D486E1E15782C004E75B2 /* ArtSportUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ArtSportUITests.m; sourceTree = "<group>"; };
 		468D48701E15782C004E75B2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		468D48811E15B234004E75B2 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
@@ -445,9 +445,9 @@
 		468D48471E15782C004E75B2 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				468D48461E15782C004E75B2 /* ArtSport.app */,
-				468D485F1E15782C004E75B2 /* ArtSportTests.xctest */,
-				468D486A1E15782C004E75B2 /* ArtSportUITests.xctest */,
+				468D48461E15782C004E75B2 /* ArtSpot.app */,
+				468D485F1E15782C004E75B2 /* ArtSpotTests.xctest */,
+				468D486A1E15782C004E75B2 /* ArtSpotUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -845,9 +845,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		468D48451E15782B004E75B2 /* ArtSport */ = {
+		468D48451E15782B004E75B2 /* ArtSpot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 468D48731E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSport" */;
+			buildConfigurationList = 468D48731E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSpot" */;
 			buildPhases = (
 				FF30CFBC76BD9CDE05DD19DE /* [CP] Check Pods Manifest.lock */,
 				468D48421E15782B004E75B2 /* Sources */,
@@ -860,14 +860,14 @@
 			);
 			dependencies = (
 			);
-			name = ArtSport;
+			name = ArtSpot;
 			productName = ArtSport;
-			productReference = 468D48461E15782C004E75B2 /* ArtSport.app */;
+			productReference = 468D48461E15782C004E75B2 /* ArtSpot.app */;
 			productType = "com.apple.product-type.application";
 		};
-		468D485E1E15782C004E75B2 /* ArtSportTests */ = {
+		468D485E1E15782C004E75B2 /* ArtSpotTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 468D48761E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSportTests" */;
+			buildConfigurationList = 468D48761E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSpotTests" */;
 			buildPhases = (
 				D56AE65AC84E22AC291CA737 /* [CP] Check Pods Manifest.lock */,
 				468D485B1E15782C004E75B2 /* Sources */,
@@ -881,14 +881,14 @@
 			dependencies = (
 				468D48611E15782C004E75B2 /* PBXTargetDependency */,
 			);
-			name = ArtSportTests;
+			name = ArtSpotTests;
 			productName = ArtSportTests;
-			productReference = 468D485F1E15782C004E75B2 /* ArtSportTests.xctest */;
+			productReference = 468D485F1E15782C004E75B2 /* ArtSpotTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		468D48691E15782C004E75B2 /* ArtSportUITests */ = {
+		468D48691E15782C004E75B2 /* ArtSpotUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 468D48791E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSportUITests" */;
+			buildConfigurationList = 468D48791E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSpotUITests" */;
 			buildPhases = (
 				992C8796C4DAA5E2A7AB3862 /* [CP] Check Pods Manifest.lock */,
 				468D48661E15782C004E75B2 /* Sources */,
@@ -902,9 +902,9 @@
 			dependencies = (
 				468D486C1E15782C004E75B2 /* PBXTargetDependency */,
 			);
-			name = ArtSportUITests;
+			name = ArtSpotUITests;
 			productName = ArtSportUITests;
-			productReference = 468D486A1E15782C004E75B2 /* ArtSportUITests.xctest */;
+			productReference = 468D486A1E15782C004E75B2 /* ArtSpotUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -933,7 +933,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 468D48411E15782B004E75B2 /* Build configuration list for PBXProject "ArtSport" */;
+			buildConfigurationList = 468D48411E15782B004E75B2 /* Build configuration list for PBXProject "ArtSpot" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -946,9 +946,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				468D48451E15782B004E75B2 /* ArtSport */,
-				468D485E1E15782C004E75B2 /* ArtSportTests */,
-				468D48691E15782C004E75B2 /* ArtSportUITests */,
+				468D48451E15782B004E75B2 /* ArtSpot */,
+				468D485E1E15782C004E75B2 /* ArtSpotTests */,
+				468D48691E15782C004E75B2 /* ArtSpotUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -1226,12 +1226,12 @@
 /* Begin PBXTargetDependency section */
 		468D48611E15782C004E75B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 468D48451E15782B004E75B2 /* ArtSport */;
+			target = 468D48451E15782B004E75B2 /* ArtSpot */;
 			targetProxy = 468D48601E15782C004E75B2 /* PBXContainerItemProxy */;
 		};
 		468D486C1E15782C004E75B2 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 468D48451E15782B004E75B2 /* ArtSport */;
+			target = 468D48451E15782B004E75B2 /* ArtSpot */;
 			targetProxy = 468D486B1E15782C004E75B2 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -1389,7 +1389,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TeraByteLogics.ArtSportTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtSport.app/ArtSport";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtSpot.app/ArtSpot";
 			};
 			name = Debug;
 		};
@@ -1402,7 +1402,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = TeraByteLogics.ArtSportTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtSport.app/ArtSport";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ArtSpot.app/ArtSpot";
 			};
 			name = Release;
 		};
@@ -1433,7 +1433,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		468D48411E15782B004E75B2 /* Build configuration list for PBXProject "ArtSport" */ = {
+		468D48411E15782B004E75B2 /* Build configuration list for PBXProject "ArtSpot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				468D48711E15782C004E75B2 /* Debug */,
@@ -1442,7 +1442,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		468D48731E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSport" */ = {
+		468D48731E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSpot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				468D48741E15782C004E75B2 /* Debug */,
@@ -1451,7 +1451,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		468D48761E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSportTests" */ = {
+		468D48761E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSpotTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				468D48771E15782C004E75B2 /* Debug */,
@@ -1460,7 +1460,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		468D48791E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSportUITests" */ = {
+		468D48791E15782C004E75B2 /* Build configuration list for PBXNativeTarget "ArtSpotUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				468D487A1E15782C004E75B2 /* Debug */,

@@ -15,9 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "468D48451E15782B004E75B2"
-               BuildableName = "ArtSport.app"
-               BlueprintName = "ArtSport"
-               ReferencedContainer = "container:ArtSport.xcodeproj">
+               BuildableName = "ArtSpot.app"
+               BlueprintName = "ArtSpot"
+               ReferencedContainer = "container:ArtSpot.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -33,9 +33,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "468D485E1E15782C004E75B2"
-               BuildableName = "ArtSportTests.xctest"
-               BlueprintName = "ArtSportTests"
-               ReferencedContainer = "container:ArtSport.xcodeproj">
+               BuildableName = "ArtSpotTests.xctest"
+               BlueprintName = "ArtSpotTests"
+               ReferencedContainer = "container:ArtSpot.xcodeproj">
             </BuildableReference>
          </TestableReference>
          <TestableReference
@@ -43,9 +43,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "468D48691E15782C004E75B2"
-               BuildableName = "ArtSportUITests.xctest"
-               BlueprintName = "ArtSportUITests"
-               ReferencedContainer = "container:ArtSport.xcodeproj">
+               BuildableName = "ArtSpotUITests.xctest"
+               BlueprintName = "ArtSpotUITests"
+               ReferencedContainer = "container:ArtSpot.xcodeproj">
             </BuildableReference>
          </TestableReference>
       </Testables>
@@ -53,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "468D48451E15782B004E75B2"
-            BuildableName = "ArtSport.app"
-            BlueprintName = "ArtSport"
-            ReferencedContainer = "container:ArtSport.xcodeproj">
+            BuildableName = "ArtSpot.app"
+            BlueprintName = "ArtSpot"
+            ReferencedContainer = "container:ArtSpot.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
       <AdditionalOptions>
@@ -76,9 +76,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "468D48451E15782B004E75B2"
-            BuildableName = "ArtSport.app"
-            BlueprintName = "ArtSport"
-            ReferencedContainer = "container:ArtSport.xcodeproj">
+            BuildableName = "ArtSpot.app"
+            BlueprintName = "ArtSpot"
+            ReferencedContainer = "container:ArtSpot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <EnvironmentVariables>
@@ -102,9 +102,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "468D48451E15782B004E75B2"
-            BuildableName = "ArtSport.app"
-            BlueprintName = "ArtSport"
-            ReferencedContainer = "container:ArtSport.xcodeproj">
+            BuildableName = "ArtSpot.app"
+            BlueprintName = "ArtSpot"
+            ReferencedContainer = "container:ArtSpot.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>
