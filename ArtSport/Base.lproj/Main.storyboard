@@ -631,9 +631,6 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="gothic" translatesAutoresizingMaskIntoConstraints="NO" id="hUt-53-8HH">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
-                            </imageView>
                             <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JKq-vi-tJY" customClass="UIButtonFontClass">
                                 <rect key="frame" x="325" y="28" width="30" height="30"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -666,18 +663,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailing" secondItem="hUt-53-8HH" secondAttribute="trailing" id="4PP-W7-BIV"/>
                             <constraint firstAttribute="trailing" secondItem="JUK-uh-uM4" secondAttribute="trailing" id="Cs0-gf-Jfu"/>
                             <constraint firstItem="JUK-uh-uM4" firstAttribute="top" secondItem="XXj-5H-0Ad" secondAttribute="top" id="Gm4-bn-cuh"/>
                             <constraint firstAttribute="bottom" secondItem="QY0-DY-TbH" secondAttribute="bottom" id="IO9-uW-tFd"/>
                             <constraint firstItem="sP7-Ce-ZgO" firstAttribute="top" secondItem="JUK-uh-uM4" secondAttribute="bottom" id="OMR-kP-31y"/>
-                            <constraint firstItem="hUt-53-8HH" firstAttribute="top" secondItem="XXj-5H-0Ad" secondAttribute="top" id="Q5H-S6-MA3"/>
                             <constraint firstItem="JKq-vi-tJY" firstAttribute="top" secondItem="eNu-gP-P22" secondAttribute="bottom" constant="8" id="bEr-1u-knu"/>
                             <constraint firstItem="QY0-DY-TbH" firstAttribute="centerX" secondItem="XXj-5H-0Ad" secondAttribute="centerX" id="eRv-ut-xGO"/>
                             <constraint firstAttribute="trailing" secondItem="JKq-vi-tJY" secondAttribute="trailing" constant="20" id="g7t-La-sdd"/>
-                            <constraint firstItem="hUt-53-8HH" firstAttribute="leading" secondItem="XXj-5H-0Ad" secondAttribute="leading" id="jjq-Pw-yEs"/>
                             <constraint firstItem="JUK-uh-uM4" firstAttribute="leading" secondItem="XXj-5H-0Ad" secondAttribute="leading" id="pqj-Kr-zHY"/>
-                            <constraint firstItem="sP7-Ce-ZgO" firstAttribute="top" secondItem="hUt-53-8HH" secondAttribute="bottom" id="tdx-MS-LgG"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" tag="1" title="" image="ballon" id="8kY-r6-Mew">
@@ -703,7 +696,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="-20" vertical="0.0"/>
                     </tabBarItem>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Q02-fa-GfQ">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Q02-fa-GfQ">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -844,7 +837,7 @@
                             <constraint firstItem="mGz-B0-VTv" firstAttribute="top" secondItem="Ld5-pZ-4yT" secondAttribute="bottom" constant="28" id="z2a-s1-pjl"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="" image="squires" id="rN5-8a-JPF"/>
+                    <tabBarItem key="tabBarItem" title="" id="rN5-8a-JPF"/>
                     <navigationItem key="navigationItem" id="vvk-AO-UjJ"/>
                     <connections>
                         <outlet property="artWorkBtn" destination="mSR-Al-4qO" id="wDh-pX-Dat"/>
@@ -1567,7 +1560,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="ZKh-Nu-3Ya" sceneMemberID="viewController">
                     <toolbarItems/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1ro-kH-CTv">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="1ro-kH-CTv">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1918,7 +1911,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="0.0" vertical="14"/>
                     </tabBarItem>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Efn-Zi-xHz">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Efn-Zi-xHz">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -1938,7 +1931,7 @@
                         <offsetWrapper key="titlePositionAdjustment" horizontal="30" vertical="19"/>
                     </tabBarItem>
                     <nil key="simulatedTopBarMetrics"/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="o4f-TF-7re">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="o4f-TF-7re">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -2258,12 +2251,10 @@
         <image name="back_arrow" width="32" height="32"/>
         <image name="ballon" width="30" height="33"/>
         <image name="dots" width="33" height="33"/>
-        <image name="gothic" width="16" height="16"/>
         <image name="icon_balloon" width="36" height="39"/>
         <image name="landing_balloon" width="109" height="120"/>
         <image name="landing_title" width="197" height="30"/>
         <image name="left_Arrow" width="42" height="42"/>
         <image name="right_Arrow" width="42" height="42"/>
-        <image name="squires" width="33" height="33"/>
     </resources>
 </document>

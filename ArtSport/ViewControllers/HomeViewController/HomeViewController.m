@@ -32,70 +32,50 @@
   
 }
 
-//-(void)viewDidAppear:(BOOL)animated {
-//    [super viewDidAppear:animated];
-//    [UIView animateWithDuration:3
-//                     animations:^{
-//                         
-//                         ;
-//                         self.bottomConstraintofBubble.constant += 73;
-//                         [self.centreBtn layoutIfNeeded];
-//                         
-//                     }
-//                     completion:^(BOOL finished)
-//     {
-//         
-//     }];
-//    
-//}
-
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     self.navigationController.tabBarItem.image = [UIImage imageNamed:@""];
-//    session = [[AVCaptureSession alloc] init];
-//    session.sessionPreset = AVCaptureSessionPresetPhoto;
-//    
-//    AVCaptureDevice *backCamera = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
-//    
-//    NSError *error;
-//    AVCaptureDeviceInput *input;
-//    
-//    @try {
-//        input = [[AVCaptureDeviceInput alloc] initWithDevice:backCamera error:&error];
-//    } @catch (NSException *exception) {
-//        NSLog(@"%@",exception.userInfo);
-//        NSLog(@"%@",error.localizedDescription);
-//    } @finally {
-//        
-//    }
-//    
-//    if (error == nil && [session canAddInput:input] ) {
-//        [session addInput:input];
-//        // The remainder of the session setup will go here...
-//
-//    }
-//    
-//    
-//    
-//    AVCaptureStillImageOutput *imageOutput = [[AVCaptureStillImageOutput alloc] init];
-//    imageOutput.outputSettings = @{
-//                                        (__bridge NSString *)kCVPixelBufferPixelFormatTypeKey : @(kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange)
-//                                        };
-//    [session addOutput:imageOutput];
-//
-//    
-//    videoPreviewLayer = [AVCaptureVideoPreviewLayer layerWithSession:session];
-//    videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspect;
-//    videoPreviewLayer.connection.videoOrientation = AVCaptureVideoOrientationPortrait;
-//    [self.previewView.layer addSublayer:videoPreviewLayer];
-//    [session startRunning];
+    
+    
+    session = [[AVCaptureSession alloc] init];
+    session.sessionPreset = AVCaptureSessionPresetPhoto;
+    
+    AVCaptureDevice *backCamera = [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];
+    
+    NSError *error;
+    AVCaptureDeviceInput *input;
+    
+    @try {
+        input = [[AVCaptureDeviceInput alloc] initWithDevice:backCamera error:&error];
+    } @catch (NSException *exception) {
+        NSLog(@"%@",exception.userInfo);
+        NSLog(@"%@",error.localizedDescription);
+    } @finally {
+        
+    }
+    
+    if (error == nil && [session canAddInput:input] ) {
+        [session addInput:input];
+        // The remainder of the session setup will go here...
+
+    }
+    
+    
+    
+    AVCaptureStillImageOutput *imageOutput = [[AVCaptureStillImageOutput alloc] init];
+    imageOutput.outputSettings = @{
+                                        (__bridge NSString *)kCVPixelBufferPixelFormatTypeKey : @(kCVPixelFormatType_420YpCbCr8BiPlanarVideoRange)
+                                        };
+    [session addOutput:imageOutput];
+
+    
+    videoPreviewLayer = [AVCaptureVideoPreviewLayer layerWithSession:session];
+    videoPreviewLayer.videoGravity = AVLayerVideoGravityResizeAspect;
+    videoPreviewLayer.connection.videoOrientation = AVCaptureVideoOrientationPortrait;
+    [self.previewView.layer addSublayer:videoPreviewLayer];
+    [session startRunning];
 
 }
-
-//- (void)viewDidAppear:(BOOL)animated {
-//    [super viewDidAppear:animated];
-//    videoPreviewLayer.frame = self.previewView.bounds;
-//}
 
  - (void)viewDidDisappear:(BOOL)animated {
     [super viewDidDisappear:animated];
@@ -106,6 +86,7 @@
 
 -(void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
+    videoPreviewLayer.frame = self.previewView.frame;
     [self.centreBtn layoutIfNeeded];
     [UIView animateWithDuration:1
                      animations:^{
@@ -122,16 +103,16 @@
     
 }
 
-//- (IBAction)capturePhoto:(id)sender {
-//    
-//    AVCaptureConnection *connection = [stillImageOutput connectionWithMediaType:AVMediaTypeVideo];
-//    if (connection.active) {
-//        //connection is active
-//        NSLog(@"Connection is active");
-//        AVCapturePhotoSettings *avSettings = [AVCapturePhotoSettings photoSettings];
-//        [stillImageOutput capturePhotoWithSettings:avSettings delegate:self];
-//    }
-//}
+- (IBAction)capturePhoto:(id)sender {
+    
+    AVCaptureConnection *connection = [stillImageOutput connectionWithMediaType:AVMediaTypeVideo];
+    if (connection.active) {
+        //connection is active
+        NSLog(@"Connection is active");
+        AVCapturePhotoSettings *avSettings = [AVCapturePhotoSettings photoSettings];
+        [stillImageOutput capturePhotoWithSettings:avSettings delegate:self];
+    }
+}
 
 - (IBAction)showSearch:(id)sender {
 
